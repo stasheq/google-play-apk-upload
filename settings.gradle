@@ -1,0 +1,2 @@
+include ':apk_upload'
+rootProject.name = "Apk upload"
