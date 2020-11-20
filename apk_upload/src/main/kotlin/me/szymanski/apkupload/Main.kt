@@ -33,12 +33,10 @@ object Main {
 
     private const val SCRIPT_FAILED_CODE = -1
 
-    private fun setHttpTimeout(requestInitializer: HttpRequestInitializer): HttpRequestInitializer {
-        return HttpRequestInitializer { request ->
-            requestInitializer.initialize(request)
-            request.connectTimeout = 3 * 60000
-            request.readTimeout = 3 * 60000
-        }
+    private fun setHttpTimeout(requestInitializer: HttpRequestInitializer) = HttpRequestInitializer { request ->
+        requestInitializer.initialize(request)
+        request.connectTimeout = 3 * 60000
+        request.readTimeout = 3 * 60000
     }
 
     private fun uploadApk(appId: String, apkPath: String, credentialsPath: String) {
