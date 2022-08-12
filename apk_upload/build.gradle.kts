@@ -8,6 +8,6 @@ application {
 }
 
 dependencies {
-    implementation("com.google.auth:google-auth-library-oauth2-http:0.22.0")
-    implementation("com.google.apis:google-api-services-androidpublisher:v3-rev20201022-1.30.10")
+    implementation("com.google.auth:google-auth-library-oauth2-http:1.10.0")
+    implementation("com.google.apis:google-api-services-androidpublisher:v3-rev142-1.25.0")
 }
